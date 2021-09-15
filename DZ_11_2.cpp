@@ -38,7 +38,12 @@ bool check_email(std::string str)
 		}
 
 		if (str[i] < '!' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == ','
+<<<<<<< HEAD
 			|| (str[i] > '9' && str[i] < '<') || str[i] == '>' || str[i] == '/' || str[i] > '~')
+=======
+			|| (str[i] > '9' && str[i] < '<') || str[i] == '>' || (str[i] > '[' && str[i] < ']')
+			|| str[i] > '~')
+>>>>>>> 9722544d8d311e28a8b60200f6439fbd5bada33f
 		{
 			error = true;
 		}
